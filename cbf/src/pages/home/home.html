@@ -5,13 +5,20 @@
 </ion-header>
 
  <ion-content>
-   <ion-card *ngFor="let event of foundEvents" (click)="goToDetails(event)">
+  <div padding>
+    <button ion-button block (click)="getSaturday()">Saturday</button>
+  </div>
+  <div padding>
+    <button ion-button block (click)="getSunday()">Sunday</button>
+  </div>
+
+  <ion-card *ngFor="let event of foundEvents" (click)="goToDetails(event)">
        <ion-card-header>
            {{ event.name }}
        </ion-card-header>
        <ion-card-content>
-          {{ event.startat | date:'h:mma'}} <br>
-          {{ event.endat | date:'h:mma'}}
+          {{ event.startat }} <br>
+          {{ event.endat }}
        </ion-card-content>
    </ion-card>
  </ion-content>

@@ -15,6 +15,7 @@ import { DetailsPage } from '../details/details';
 export class HomePage {
 
   public foundEvents;
+  public foundSaturdayEvents;
 
   constructor(public navCtrl: NavController, private dataservice: Dataservice) {
   }
@@ -32,7 +33,10 @@ ionViewDidLoad() {
           err => console.error(err),
           () => console.log('getEvents completed')
       );
-  }
+  };
+
+  getSaturday() {
+  };
 
   goToDetails(event) {
     this.navCtrl.push(DetailsPage, {event: event})

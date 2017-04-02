@@ -24,4 +24,19 @@ export class Dataservice {
     return this.http.get(`${event.url}`);
   }
 
+  getSaturday() {
+    let totalEvents = this.http.get('data.json');
+    var eventsCount = 174;
+    var satEvents = [];
+    console.log(eventsCount);
+    console.log(totalEvents[0]);
+    for (var i = 0; i<eventsCount; i++) {
+      if (new Date(totalEvents[i].startat).getDate() == 8) {
+        console.log(totalEvents[i]);
+        satEvents.push(totalEvents[i]);
+      }
+    }
+    return satEvents;
+  };
+
 }
