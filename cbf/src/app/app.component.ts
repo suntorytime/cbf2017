@@ -5,14 +5,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { TabsPage } from '../pages/tabs/tabs';
 
-
 @Component({
   templateUrl: 'app.html',
 })
 
 export class MyApp {
-
-  title = "stuff";
 
   rootPage:any = TabsPage;
 

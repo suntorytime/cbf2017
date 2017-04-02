@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "startat": "2017-04-09T00:30:00.000Z",
+        "location": "Kabuki Cinemas",
+        "name": "2017 Cherry Blossom Queen Program  Cornonation Night"
+    },
+    {
+        "id": 2,
+        "startat": "2017-04-08T18:00:00.000Z",
+        "endat": "2017-04-09T00:00:00.000Z",
+        "location": "Post & Buchanan",
+        "imagename": "NBC_Logo.jpg",
+        "name": "NBC Bay Area"
+    },
+    {
+        "id": 3,
+        "startat": "2017-04-09T18:00:00.000Z",
+        "endat": "2017-04-10T00:00:00.000Z",
+        "location": "Post & Buchanan",
+        "name": "Hula Dance and Prize Give-aways"
+    },
+    {
+        "id": 4,
+        "startat": "2017-04-08T19:00:00.000Z",
+        "endat": "2017-04-08T19:45:00.000Z",
+        "location": "Peace Plaza Stage",
+        "imagename": "TaikoDojo.jpg",
+        "name": "San Francisco Taiko Dojo",
+        "url": "www.sftaiko.com",
+        "details": "Grandmaster Seiichi Tanaka founded the San Francisco Taiko Dojo in 1968 and introduced the taiko art form to America. Over the years, Grandmaster Tanaka’s students have traveled around the globe, forming new taiko ensembles and establishing taiko as an art form. San Francisco Taiko Dojo remains the most exciting and dynamic taiko group in the world. Grandmaster Tanaka’s style has developed the taiko from a primitive folk art to a powerful, sophisticated synthesis of rhythm, harmony and body movements."
+    },
+
+]
