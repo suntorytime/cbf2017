@@ -5,6 +5,7 @@ import { NavController, NavParams } from 'ionic-angular';
 // import { Dataservice } from '../../providers/dataservice'
 import { DetailsPage } from '../details/details';
 // import { Firstsat } from '../../pipes/firstsat.pipe';
+import * as _ from 'lodash';
 
 /*
   Generated class for the FirstSat page.
@@ -21,9 +22,10 @@ export class FirstSatPage {
   public list;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.list = navParams.get('list').filter(function(item) {
+    this.list = _.sortBy(navParams.get('list'), "startat").filter(function(item) {
       if (new Date(item.startat).getDate() == 8) return item;
     })
+    console.log(_.sortBy(this.list, "startat"));
     console.log(this.list);
   }
 
