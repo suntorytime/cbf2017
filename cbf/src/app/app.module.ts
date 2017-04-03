@@ -9,7 +9,9 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+
 import { DetailsPage } from '../pages/details/details';
+import { FirstSatPage } from '../pages/first-sat/first-sat';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { DetailsPage } from '../pages/details/details';
     ContactPage,
     HomePage,
     TabsPage,
-    DetailsPage
+    DetailsPage,
+    FirstSatPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -30,7 +33,8 @@ import { DetailsPage } from '../pages/details/details';
     ContactPage,
     HomePage,
     TabsPage,
-    DetailsPage
+    DetailsPage,
+    FirstSatPage
   ],
   providers: [
     StatusBar,

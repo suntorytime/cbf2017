@@ -2,9 +2,11 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 
+// custom
 import { Dataservice } from '../../providers/dataservice'
-
 import { DetailsPage } from '../details/details';
+import { FirstSatPage } from '../first-sat/first-sat';
+
 
 @Component({
   selector: 'page-home',
@@ -15,15 +17,13 @@ import { DetailsPage } from '../details/details';
 export class HomePage {
 
   public foundEvents;
-  public foundSaturdayEvents;
 
-  constructor(public navCtrl: NavController, private dataservice: Dataservice) {
+  constructor(public navCtrl: NavController, private dataservice: Dataservice) {}
+
+  ionViewDidLoad() {
+    // console.log("I'm alive!");
+    this.getEvents();
   }
-
-ionViewDidLoad() {
-  console.log("I'm alive!");
-  this.getEvents();
-}
 
   getEvents() {
       this.dataservice.getEvents().subscribe(
@@ -36,6 +36,7 @@ ionViewDidLoad() {
   };
 
   getSaturday() {
+    this.navCtrl.push(FirstSatPage, {list: this.foundEvents})
   };
 
   goToDetails(event) {
