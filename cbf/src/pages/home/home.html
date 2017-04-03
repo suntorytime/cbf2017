@@ -14,8 +14,9 @@
            {{ event.name }}
        </ion-card-header>
        <ion-card-content>
-          {{ event.startat | date: 'fullDate'}} <br>
-          {{ event.endat | date: 'fullDate'}}
+          {{ event.startat | date: 'longDate' }} <br>
+          {{ event.startat | date: 'shortTime' }} <br>
+          {{ event.endat | date: 'shortTime'}}
        </ion-card-content>
    </ion-card>
  </ion-content>
