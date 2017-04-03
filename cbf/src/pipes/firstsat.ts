@@ -15,7 +15,5 @@ export class Firstsat {
     Takes a value and makes it lowercase.
    */
   transform(value, args) {
-    value = value + 'hello'; // make sure it's a string
-    return value.toLowerCase();
   }
 }

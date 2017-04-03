@@ -4,6 +4,7 @@ import { NavController, NavParams } from 'ionic-angular';
 // custom
 // import { Dataservice } from '../../providers/dataservice'
 import { DetailsPage } from '../details/details';
+// import { Firstsat } from '../../pipes/firstsat.pipe';
 
 /*
   Generated class for the FirstSat page.
@@ -13,15 +14,17 @@ import { DetailsPage } from '../details/details';
 */
 @Component({
   selector: 'page-first-sat',
-  templateUrl: 'first-sat.html',
-  // providers: [Dataservice]
+  templateUrl: 'first-sat.html'
 })
 export class FirstSatPage {
 
   public list;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.list = navParams.get('list');
+    this.list = navParams.get('list').filter(function(item) {
+      if (new Date(item.startat).getDate() == 8) return item;
+    })
+    console.log(this.list);
   }
 
   goToDetails(event) {
@@ -31,7 +34,6 @@ export class FirstSatPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad FirstSatPage');
     // console.log(this.navParams.get('events'));
-    // console.log(this.list)
   }
 
 }

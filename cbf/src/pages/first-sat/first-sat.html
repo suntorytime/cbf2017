@@ -14,15 +14,16 @@
 
 
 <ion-content padding>
-<p>This is some dummy content</p>
+<p>This is some dummy content for the first saturday</p>
 
 <ion-card *ngFor="let event of list" (click)="goToDetails(event)">
      <ion-card-header>
          {{ event.name }}
      </ion-card-header>
      <ion-card-content>
-        {{ event.startat | date: 'fullDate' }} <br>
-        {{ event.endat }}
+        {{ event.startat | date: 'mediumDate' }} <br>
+        {{ event.startat | date: 'shortTime' }} <br>
+        {{ event.endat | date: 'shortTime'}}
      </ion-card-content>
  </ion-card>
 

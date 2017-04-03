@@ -12,6 +12,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { DetailsPage } from '../pages/details/details';
 import { FirstSatPage } from '../pages/first-sat/first-sat';
+import { Firstsat } from '../pipes/firstsat';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FirstSatPage } from '../pages/first-sat/first-sat';
     HomePage,
     TabsPage,
     DetailsPage,
-    FirstSatPage
+    FirstSatPage,
+    Firstsat
   ],
   imports: [
     IonicModule.forRoot(MyApp)
