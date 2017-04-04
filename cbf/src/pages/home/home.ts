@@ -6,6 +6,7 @@ import { NavController } from 'ionic-angular';
 import { Dataservice } from '../../providers/dataservice'
 import { DetailsPage } from '../details/details';
 import { FirstSatPage } from '../first-sat/first-sat';
+import * as _ from 'lodash';
 
 
 @Component({
@@ -25,10 +26,15 @@ export class HomePage {
     this.getEvents();
   }
 
+  // this.list = _.sortBy(navParams.get('list'), "startat").filter(function(item) {
+  //   if (new Date(item.startat).getDate() == 8) return item;
+  // })
+
   getEvents() {
       this.dataservice.getEvents().subscribe(
           data => {
-              this.foundEvents = data.json();
+              this.foundEvents = _.sortBy(data.json(), 'startat');
+              // console.log(data.json())
           },
           err => console.error(err),
           () => console.log('getEvents completed')

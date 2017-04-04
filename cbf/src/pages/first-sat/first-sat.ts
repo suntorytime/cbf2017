@@ -25,8 +25,8 @@ export class FirstSatPage {
     this.list = _.sortBy(navParams.get('list'), "startat").filter(function(item) {
       if (new Date(item.startat).getDate() == 8) return item;
     })
-    console.log(_.sortBy(this.list, "startat"));
-    console.log(this.list);
+    // console.log(_.sortBy(this.list, "startat"));
+    // console.log(this.list);
   }
 
   goToDetails(event) {
