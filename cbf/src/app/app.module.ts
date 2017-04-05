@@ -13,7 +13,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { DetailsPage } from '../pages/details/details';
 import { FirstSatPage } from '../pages/first-sat/first-sat';
 import { Firstsat } from '../pipes/firstsat';
-import { FirstsunPage } from '../pages/firstsun/firstsun'
+import { FirstsunPage } from '../pages/firstsun/firstsun';
+import { SecsatPage } from '../pages/secsat/secsat';
+import { SecsunPage } from '../pages/secsun/secsun';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { FirstsunPage } from '../pages/firstsun/firstsun'
     DetailsPage,
     FirstSatPage,
     Firstsat,
-    FirstsunPage
+    FirstsunPage,
+    SecsatPage,
+    SecsunPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -39,7 +43,9 @@ import { FirstsunPage } from '../pages/firstsun/firstsun'
     TabsPage,
     DetailsPage,
     FirstSatPage,
-    FirstsunPage
+    FirstsunPage,
+    SecsatPage,
+    SecsunPage
   ],
   providers: [
     StatusBar,

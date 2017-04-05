@@ -7,6 +7,8 @@ import { Dataservice } from '../../providers/dataservice'
 import { DetailsPage } from '../details/details';
 import { FirstSatPage } from '../first-sat/first-sat';
 import { FirstsunPage } from '../firstsun/firstsun';
+import { SecsatPage } from '../secsat/secsat';
+import { SecsunPage } from '../secsun/secsun';
 import * as _ from 'lodash';
 
 
@@ -30,7 +32,6 @@ export class HomePage {
       this.dataservice.getEvents().subscribe(
           data => {
               this.foundEvents = _.sortBy(data.json(), 'startat');
-              // console.log(data.json())
           },
           err => console.error(err),
           () => console.log('getEvents completed')
@@ -43,6 +44,14 @@ export class HomePage {
 
   getSunday() {
     this.navCtrl.push(FirstsunPage, {list: this.foundEvents})
+  };
+
+  getSecSat() {
+    this.navCtrl.push(SecsatPage, {list: this.foundEvents})
+  };
+
+  getSecSun() {
+    this.navCtrl.push(SecsunPage, {list: this.foundEvents})
   };
 
   goToDetails(event) {
