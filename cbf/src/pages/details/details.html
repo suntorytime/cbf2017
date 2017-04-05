@@ -16,11 +16,12 @@
 <ion-content padding>
 
   <ion-card>
-    <img src="https://sfcherryblossom.org/wp-content/uploads/2017/ScheduleData/Images/{{event.imagename}}">
+    <img onError="this.src='../../assets/2017CBF.png'" src="https://sfcherryblossom.org/wp-content/uploads/2017/ScheduleData/Images/{{event.imagename}}">
     <ion-card-content>
       <ion-card-title>
         {{event.name}}
         </ion-card-title>
+        <p>{{event.category}}</p>
         <p>{{event.startat | date:'fullDate'}}</p>
         <p>{{event.startat | date:'h:mma'}} to {{event.endat | date:'h:mma'}}</p>
         <p>Location: {{event.location}}</p>
