@@ -6,16 +6,16 @@ import { DetailsPage } from '../details/details';
 import * as _ from 'lodash';
 
 @Component({
-  selector: 'page-first-sat',
-  templateUrl: 'first-sat.html'
+  selector: 'page-firstsun',
+  templateUrl: 'firstsun.html'
 })
-export class FirstSatPage {
+export class FirstsunPage {
 
   public list;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.list = _.sortBy(navParams.get('list'), "startat").filter(function(item) {
-      if (new Date(item.startat).getDate() == 8) return item;
+      if (new Date(item.startat).getDate() == 9) return item;
     })
   }
 

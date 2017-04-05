@@ -6,6 +6,7 @@ import { NavController } from 'ionic-angular';
 import { Dataservice } from '../../providers/dataservice'
 import { DetailsPage } from '../details/details';
 import { FirstSatPage } from '../first-sat/first-sat';
+import { FirstsunPage } from '../firstsun/firstsun';
 import * as _ from 'lodash';
 
 
@@ -22,13 +23,8 @@ export class HomePage {
   constructor(public navCtrl: NavController, private dataservice: Dataservice) {}
 
   ionViewDidLoad() {
-    // console.log("I'm alive!");
     this.getEvents();
   }
-
-  // this.list = _.sortBy(navParams.get('list'), "startat").filter(function(item) {
-  //   if (new Date(item.startat).getDate() == 8) return item;
-  // })
 
   getEvents() {
       this.dataservice.getEvents().subscribe(
@@ -45,9 +41,12 @@ export class HomePage {
     this.navCtrl.push(FirstSatPage, {list: this.foundEvents})
   };
 
+  getSunday() {
+    this.navCtrl.push(FirstsunPage, {list: this.foundEvents})
+  };
+
   goToDetails(event) {
     this.navCtrl.push(DetailsPage, {event: event})
   }
 
 }
-

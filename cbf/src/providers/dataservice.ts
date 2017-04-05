@@ -16,7 +16,8 @@ export class Dataservice {
   }
 
   getEvents() {
-    let events = this.http.get('data.json');
+    let events = this.http.get('https://sfcherryblossom.org/wp-content/uploads/2017/ScheduleData/NCCBFSchedule.json');
+    console.log(events);
     return events;
   }
 
