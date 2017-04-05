@@ -4,12 +4,40 @@
   </ion-navbar>
 </ion-header>
 
- <ion-content>
+<ion-content class="card-background-page">
+
+  <ion-card (click)="getSaturday()">
+    <img src="../assets/cherrybg.jpg"/>
+    <div class="card-title">Saturday</div>
+    <div class="card-subtitle">April 8, 2017</div>
+  </ion-card>
+
+  <ion-card (click)="getSaturday()">
+    <img src="../assets/shodobg.jpg"/>
+    <div class="card-title">Sunday</div>
+    <div class="card-subtitle">April 9, 2017</div>
+  </ion-card>
+
+  <ion-card (click)="getSaturday()">
+    <img src="../assets/bridgebg.jpg"/>
+    <div class="card-title">Saturday</div>
+    <div class="card-subtitle">April 15, 2017</div>
+  </ion-card>
+
+  <ion-card (click)="getSaturday()">
+    <img src="../assets/toribg.jpg"/>
+    <div class="card-title">Sunday</div>
+    <div class="card-subtitle">April 16, 2017</div>
+  </ion-card>
+
+</ion-content>
+
+ <!--<ion-content>
   <div padding>
     <button ion-button block (click)="getSaturday()">Saturday</button>
-  </div>
+  </div>-->
 
-  <ion-card *ngFor="let event of foundEvents" (click)="goToDetails(event)">
+  <!--<ion-card *ngFor="let event of foundEvents" (click)="goToDetails(event)">
        <ion-card-header>
            {{ event.name }}
        </ion-card-header>
@@ -18,5 +46,17 @@
           {{ event.startat | date: 'shortTime' }} <br>
           {{ event.endat | date: 'shortTime'}}
        </ion-card-content>
-   </ion-card>
- </ion-content>
+   </ion-card>-->
+
+   <!--<ion-list>
+     <ion-item *ngFor="let event of foundEvents" (click)="goToDetails(event)">
+       <ion-thumbnail item-left>
+         <img src="https://sfcherryblossom.org/wp-content/uploads/2017/ScheduleData/Images/{{event.imagename}}">
+       </ion-thumbnail>
+       <h2>{{event.name}}</h2>
+       <p>{{event.startat | date: 'fullDate'}}</p>
+       <button ion-button clear item-right>View</button>
+     </ion-item>
+   </ion-list>-->
+ <!--</ion-content>-->
+ 

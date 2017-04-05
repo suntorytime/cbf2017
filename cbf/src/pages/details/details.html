@@ -14,10 +14,19 @@
 
 
 <ion-content padding>
-  {{event.name}} <br>
-  {{event.startat | date:'h:mma'}} <br>
-  {{event.endat | date:'h:mma'}} <br>
 
-  Description: <br>
-  {{event.details}}
+  <ion-card>
+    <img src="https://sfcherryblossom.org/wp-content/uploads/2017/ScheduleData/Images/{{event.imagename}}">
+    <ion-card-content>
+      <ion-card-title>
+        {{event.name}}
+        </ion-card-title>
+        <p>{{event.startat | date:'fullDate'}}</p>
+        <p>{{event.startat | date:'h:mma'}} to {{event.endat | date:'h:mma'}}</p>
+        <p>Location: {{event.location}}</p>
+        <a href="https://www.google.com/maps/d/viewer?mid=1a23pYi2awOhVB_y1XEIYlzmYrHU">Map</a>
+        <br>
+        <p>{{event.details}}</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
