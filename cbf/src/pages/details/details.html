@@ -24,8 +24,12 @@
         <p>{{event.category}}</p>
         <p>{{event.startat | date:'fullDate'}}</p>
         <p>{{event.startat | date:'h:mma'}} to {{event.endat | date:'h:mma'}}</p>
-        <p>Location: {{event.location}}</p>
-        <a href="https://www.google.com/maps/d/viewer?mid=1a23pYi2awOhVB_y1XEIYlzmYrHU">Map</a>
+        <p>Location: {{event.location}}
+          <a href="https://www.google.com/maps/d/viewer?mid=1a23pYi2awOhVB_y1XEIYlzmYrHU">
+              <ion-icon name="md-map"></ion-icon>
+          </a>
+        </p>
+
         <br>
         <br>
         <p>{{event.details}}</p>

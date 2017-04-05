@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.cbf705958" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>cbf</name>
+  <name>Cherry Blossom Festival 2017</name>
   <description>Cherry Blossom Festival 2017</description>
   <author email="stevensm90@gmail.com" href="https://suntorytime.github.io/">Steven Santa Maria</author>
   <content src="index.html"/>
