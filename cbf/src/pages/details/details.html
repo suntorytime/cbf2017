@@ -21,16 +21,14 @@
       <ion-card-title>
         {{event.name}}
         </ion-card-title>
-        <p>{{event.category}}</p>
+        <p class="event-category">{{event.category}}</p>
         <p>{{event.startat | date:'fullDate'}}</p>
         <p>{{event.startat | date:'h:mma'}} to {{event.endat | date:'h:mma'}}</p>
-        <p>Location: {{event.location}}
+        <p>Location: {{event.location}} <br>
           <a href="https://www.google.com/maps/d/viewer?mid=1a23pYi2awOhVB_y1XEIYlzmYrHU">
-              <ion-icon name="md-map"></ion-icon>
+              <button ion-button>Map</button>
           </a>
         </p>
-
-        <br>
         <br>
         <p>{{event.details}}</p>
     </ion-card-content>
