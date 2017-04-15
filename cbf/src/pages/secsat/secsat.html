@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Saturday</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<p>Saturday April 15, 2017</p>
+
+ <ion-list>
+   <ion-item *ngFor="let event of list" (click)="goToDetails(event)">
+     <ion-avatar item-left>
+       <img onError="this.src='assets/2017CBF.png'" src="https://sfcherryblossom.org/wp-content/uploads/2017/ScheduleData/Images/{{event.imagename}}">
+     </ion-avatar>
+     <h2>{{event.name}}</h2>
+     <p>{{ event.startat | date: 'shortTime' }} to {{ event.endat | date: 'shortTime'}}</p>
+   </ion-item>
+ </ion-list>
+
+</ion-content>
