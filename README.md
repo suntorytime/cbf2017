@@ -1,7 +1,7 @@
 # Cherry Blossom Festival 2017
 
 ## About
-Cherry Blossom Festival 2017 is the offical Android app for the Northern California Cherry Blossom Festival. It is developed by Steven Santa Maria with support from the CBF apps committee, Dave Golden and Keita Ito.
+Cherry Blossom Festival 2017 is the official Android app for the Northern California Cherry Blossom Festival. It is developed by Steven Santa Maria with support from the CBF apps committee, Dave Golden and Keita Ito.
 
 ## Download
 Cherry Blossom Festival 2017 is available on the [Google Play Store](https://goo.gl/XKxNyX).
