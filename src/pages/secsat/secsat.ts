@@ -15,7 +15,7 @@ export class SecsatPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.list = _.sortBy(navParams.get('list'), "startat").filter(function(item) {
-      if (new Date(item.startat).getDate() == 15) return item;
+      if (new Date(item.startat).getDate() == 21) return item;
     })
   }
 

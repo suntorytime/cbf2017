@@ -15,7 +15,7 @@ export class SecsunPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.list = _.sortBy(navParams.get('list'), "startat").filter(function(item) {
-      if (new Date(item.startat).getDate() == 16) return item;
+      if (new Date(item.startat).getDate() == 22) return item;
     })
   }
 
