@@ -22,15 +22,24 @@
         {{event.name}}
         </ion-card-title>
         <p class="event-category">{{event.category}}</p>
-        <p>{{event.startat | date:'fullDate'}}</p>
-        <p>{{event.startat | date:'h:mma'}} to {{event.endat | date:'h:mma'}}</p>
-        <p>Location: {{event.location}} <br>
-          <a href="https://www.google.com/maps/search/?api=1&query={{event.location}}">
-              <button ion-button>Map</button>
-          </a>
+        <p><b>Date:</b> {{event.startat | date:'fullDate'}}</p>
+        <p><b>Time:</b> {{event.startat | date:'h:mma'}} to {{event.endat | date:'h:mma'}}</p>
+        <p><b>Location:</b> {{event.location}} <br>
         </p>
         <br>
         <p>{{event.details}}</p>
     </ion-card-content>
+    
+    <ion-row>
+      <ion-col>
+        <a href="https://www.google.com/maps/search/?api=1&query={{event.location}}">
+          <button ion-button icon-left clear small>
+            <ion-icon name="md-navigate"></ion-icon>
+            <div>{{event.location}}</div>
+          </button>
+        </a>
+      </ion-col>
+    </ion-row>
+
   </ion-card>
 </ion-content>
