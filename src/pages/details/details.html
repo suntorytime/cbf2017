@@ -16,7 +16,7 @@
 <ion-content padding>
 
   <ion-card>
-    <img onError="this.src='assets/2017CBF.png'" src="https://sfcherryblossom.org/wp-content/uploads/2017/ScheduleData/Images/{{event.imagename}}">
+    <img onError="this.src='assets/icon-2018.jpg'" src="https://sfcherryblossom.org/wp-content/uploads/2017/ScheduleData/Images/{{event.imagename}}">
     <ion-card-content>
       <ion-card-title>
         {{event.name}}
@@ -25,7 +25,7 @@
         <p>{{event.startat | date:'fullDate'}}</p>
         <p>{{event.startat | date:'h:mma'}} to {{event.endat | date:'h:mma'}}</p>
         <p>Location: {{event.location}} <br>
-          <a href="https://www.google.com/maps/d/viewer?mid=1a23pYi2awOhVB_y1XEIYlzmYrHU">
+          <a href="https://www.google.com/maps/search/?api=1&query={{event.location}}">
               <button ion-button>Map</button>
           </a>
         </p>

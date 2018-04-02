@@ -25,7 +25,7 @@ export class HomePage {
 
   ionViewDidLoad() {
     this.getEvents();
-  }
+  };
 
   getEvents() {
       this.dataservice.getEvents().subscribe(

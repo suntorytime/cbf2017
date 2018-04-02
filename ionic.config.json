@@ -1,6 +1,8 @@
 {
   "name": "cbf",
   "app_id": "24cffb19",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

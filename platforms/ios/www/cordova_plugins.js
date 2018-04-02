@@ -48,6 +48,14 @@ module.exports = [
             "cordova.plugins.Keyboard"
         ],
         "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-ionic-webview/src/www/ios/ios-wkwebview-exec.js",
+        "id": "cordova-plugin-ionic-webview.ios-wkwebview-exec",
+        "pluginId": "cordova-plugin-ionic-webview",
+        "clobbers": [
+            "cordova.exec"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -58,7 +66,8 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "4.0.2",
     "cordova-plugin-statusbar": "2.2.1",
     "cordova-plugin-whitelist": "1.3.1",
-    "ionic-plugin-keyboard": "2.2.1"
+    "ionic-plugin-keyboard": "2.2.1",
+    "cordova-plugin-ionic-webview": "1.1.19"
 }
 // BOTTOM OF METADATA
 });

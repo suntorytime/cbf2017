@@ -13,7 +13,7 @@
  <ion-list>
    <ion-item *ngFor="let event of list" (click)="goToDetails(event)">
      <ion-avatar item-left>
-       <img onError="this.src='assets/2017CBF.png'" src="https://sfcherryblossom.org/wp-content/uploads/2017/ScheduleData/Images/{{event.imagename}}">
+       <img onError="this.src='assets/icon-2018.jpg'" src="https://sfcherryblossom.org/wp-content/uploads/2017/ScheduleData/Images/{{event.imagename}}">
      </ion-avatar>
      <h2>{{event.name}}</h2>
      <p>{{ event.startat | date: 'shortTime' }} to {{ event.endat | date: 'shortTime'}}</p>
