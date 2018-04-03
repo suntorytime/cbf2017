@@ -15,7 +15,7 @@ import { FirstSatPage } from '../pages/first-sat/first-sat';
 import { FirstsunPage } from '../pages/firstsun/firstsun';
 import { SecsatPage } from '../pages/secsat/secsat';
 import { SecsunPage } from '../pages/secsun/secsun';
-// import { EncodeURIComponentPipe } from 'angular-pipes';
+import { EncodeURIComponentPipe } from 'angular-pipes';
 import { SlugifyPipe } from 'angular-pipes';
 
 @NgModule({
@@ -30,7 +30,8 @@ import { SlugifyPipe } from 'angular-pipes';
     FirstsunPage,
     SecsatPage,
     SecsunPage,
-    SlugifyPipe
+    SlugifyPipe,
+    EncodeURIComponentPipe
   ],
   imports: [
     IonicModule.forRoot(MyApp)

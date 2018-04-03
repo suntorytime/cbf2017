@@ -146,7 +146,7 @@ var HomePage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Dataservice; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(309);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(538);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(539);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -447,13 +447,13 @@ var ContactPage = (function () {
 
 /***/ }),
 
-/***/ 389:
+/***/ 390:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(390);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(491);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(391);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(492);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -461,14 +461,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 491:
+/***/ 492:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__(532);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__(533);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_about_about__ = __webpack_require__(387);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_contact_contact__ = __webpack_require__(388);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(381);
@@ -480,7 +480,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_firstsun_firstsun__ = __webpack_require__(384);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_secsat_secsat__ = __webpack_require__(385);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_secsun_secsun__ = __webpack_require__(386);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_angular_pipes__ = __webpack_require__(541);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_angular_pipes__ = __webpack_require__(389);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -522,8 +522,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_11__pages_firstsun_firstsun__["a" /* FirstsunPage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_secsat_secsat__["a" /* SecsatPage */],
                 __WEBPACK_IMPORTED_MODULE_13__pages_secsun_secsun__["a" /* SecsunPage */],
-                __WEBPACK_IMPORTED_MODULE_14_angular_pipes__["a" /* EncodeURIComponentPipe */],
-                __WEBPACK_IMPORTED_MODULE_14_angular_pipes__["b" /* SlugifyPipe */]
+                __WEBPACK_IMPORTED_MODULE_14_angular_pipes__["b" /* SlugifyPipe */],
+                __WEBPACK_IMPORTED_MODULE_14_angular_pipes__["a" /* EncodeURIComponentPipe */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* MyApp */], {}, {
@@ -557,7 +557,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 532:
+/***/ 533:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -650,7 +650,7 @@ var DetailsPage = (function () {
     };
     DetailsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* Component */])({
-            selector: 'page-details',template:/*ion-inline-start:"/Users/steven/dev/cbf2017/src/pages/details/details.html"*/'<!--\n  Generated template for the Details page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{event.name}}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-card>\n    <img onError="this.src=\'assets/icon-2018.jpg\'" src="https://sfcherryblossom.org/wp-content/uploads/2017/ScheduleData/Images/{{event.imagename}}">\n    <ion-card-content>\n      <ion-card-title>\n        {{event.name}}\n        </ion-card-title>\n        <p class="event-category">{{event.category}}</p>\n        <p><b>Date:</b> {{event.startat | date:\'fullDate\'}}</p>\n        <p><b>Time:</b> {{event.startat | date:\'h:mma\'}} to {{event.endat | date:\'h:mma\'}}</p>\n        <p><b>Location:</b> {{event.location}} <br>\n        </p>\n        <br>\n        <p>{{event.details}}</p>\n    </ion-card-content>\n    \n    <ion-row>\n      <ion-col>\n        <a href="https://www.google.com/maps/search/?api=1&query={{ event.location | slugify }}">\n          <button ion-button icon-left clear small>\n            <ion-icon name="md-navigate"></ion-icon>\n            <div>{{event.location}}</div>\n          </button>\n        </a>\n      </ion-col>\n    </ion-row>\n\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/steven/dev/cbf2017/src/pages/details/details.html"*/,
+            selector: 'page-details',template:/*ion-inline-start:"/Users/steven/dev/cbf2017/src/pages/details/details.html"*/'<!--\n  Generated template for the Details page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{event.name}}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-card>\n    <img onError="this.src=\'assets/icon-2018.jpg\'" src="https://sfcherryblossom.org/wp-content/uploads/2017/ScheduleData/Images/{{event.imagename}}">\n    <ion-card-content>\n      <ion-card-title>\n        {{event.name}}\n        </ion-card-title>\n        <p class="event-category">{{event.category}}</p>\n        <p><b>Date:</b> {{event.startat | date:\'fullDate\'}}</p>\n        <p><b>Time:</b> {{event.startat | date:\'h:mma\'}} to {{event.endat | date:\'h:mma\'}}</p>\n        <p><b>Location:</b> {{event.location}} <br>\n        </p>\n        <br>\n        <p>{{event.details}}</p>\n    </ion-card-content>\n    \n    <ion-row>\n      <ion-col>\n        <a href="https://www.google.com/maps/search/?api=1&query={{ event.location | encodeURIComponent }}">\n          <button ion-button icon-left clear small>\n            <ion-icon name="md-navigate"></ion-icon>\n            <div>{{event.location}}</div>\n          </button>\n        </a>\n      </ion-col>\n    </ion-row>\n\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/steven/dev/cbf2017/src/pages/details/details.html"*/,
             providers: [__WEBPACK_IMPORTED_MODULE_2__providers_dataservice__["a" /* Dataservice */]]
         }), 
         __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_dataservice__["a" /* Dataservice */]])
@@ -661,5 +661,5 @@ var DetailsPage = (function () {
 
 /***/ })
 
-},[389]);
+},[390]);
 //# sourceMappingURL=main.js.map
