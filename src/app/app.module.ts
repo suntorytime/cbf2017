@@ -12,7 +12,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { DetailsPage } from '../pages/details/details';
 import { FirstSatPage } from '../pages/first-sat/first-sat';
-import { Firstsat } from '../pipes/firstsat';
 import { FirstsunPage } from '../pages/firstsun/firstsun';
 import { SecsatPage } from '../pages/secsat/secsat';
 import { SecsunPage } from '../pages/secsun/secsun';
@@ -26,7 +25,6 @@ import { SecsunPage } from '../pages/secsun/secsun';
     TabsPage,
     DetailsPage,
     FirstSatPage,
-    Firstsat,
     FirstsunPage,
     SecsatPage,
     SecsunPage

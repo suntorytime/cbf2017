@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 // custom
-import { Dataservice } from '../../providers/dataservice'
+import { Dataservice } from '../../providers/dataservice';
 
 /*
   Generated class for the Details page.
@@ -23,6 +23,7 @@ export class DetailsPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, private dataservice: Dataservice) {
 
     this.event = navParams.get('event');
+
 
     this.dataservice.getDetails(this.event).subscribe(
       data => this.description = data.text(),
